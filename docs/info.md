@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+8 chanel 8bit (0-254) pwm controller uart control interface  
 
 ## How to test
 
-Explain how to use your project
+send 8 values 0 to 254 write to memory send 0xff, 255 
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+LED pmod or 7 segment pmod 
