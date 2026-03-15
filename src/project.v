@@ -20,14 +20,14 @@ module tt_um_pwm_controller_atudoroi (
 
 main main(
   .CLK_i(clk),
-  .D1(ou_out[0]),
-	.D2(ou_out[1]),
-	.D3(ou_out[2]),
-	.D4(ou_out[3]),
-	.D5(ou_out[4]),
-	.D6(ou_out[5]),
-	.D7(ou_out[6]), 
-	.D8(ou_out[7]),
+  .D1(uo_out[0]),
+	.D2(uo_out[1]),
+	.D3(uo_out[2]),
+	.D4(uo_out[3]),
+	.D5(uo_out[4]),
+	.D6(uo_out[5]),
+	.D7(uo_out[6]), 
+	.D8(uo_out[7]),
 	.TX_TO_FTDI(uio_out[6]),
 	.RX_FROM_FTDI(uio_in[3])
    
