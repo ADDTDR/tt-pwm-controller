@@ -28,7 +28,7 @@ main main(
 	.D6(uo_out[5]),
 	.D7(uo_out[6]), 
 	.D8(uo_out[7]),
-	.TX_TO_FTDI(uio_out[6]),
+	// .TX_TO_FTDI(uio_out[6]),
 	.RX_FROM_FTDI(uio_in[3])
    
     );
@@ -36,13 +36,12 @@ main main(
    assign uio_oe = 8'b1110_1111;
   // All output pins must be assigned. If not used, assign to 0.
   // assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
-  assign uio_out[2:0] = 0;
-  assign uio_out[5:4] = 0;
-  assign uio_out[7] = 0;
-  
+  assign uio_out = 0;
+
+  // assign uio_out[7] = 0;
   // assign uio_oe  = 0;
 
   // List all unused inputs to prevent warnings
-  wire _unused = &{ena, clk,  rst_n, 1'b0};
+  wire _unused = &{ena, clk, ui_in, rst_n, 1'b0};
 
 endmodule
