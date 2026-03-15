@@ -7,7 +7,7 @@ module PWM (
     reg [8:0]   PWM_accumulator;
 
     initial
-        PWM_accumulator <= 0;
+        PWM_accumulator = 0;
 
     always @(posedge clk) begin
         PWM_accumulator <= PWM_accumulator[7:0] + PWM_in;
